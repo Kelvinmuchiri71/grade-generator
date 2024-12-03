@@ -27,3 +27,49 @@ And if the demerit points exceed 12 points, the program returns "License suspend
 
 
 
+# net salary calculator
+The net salary calculator is a javascript program designed to calculate an individual,s net salary based on their basic salary and benefits. the program computes the following:
+> Gross Salary
+>PAYE (Pay As You Earn) tax
+> NHIF deductions
+>NSSF deductions
+>Total deductions
+>Net Salary
+
+The program uses the tax and deduction rates provided by the Kenya Revenue Authority (kra), National Hospital Insurance Fund (NHIF), and National Social Security Fund (NSSF).
+
+Features
+1 Gross Salary Calculator
+gross salary = vasic salary + benefits.
+
+2 PAYE tax calculation
+calculated progressively using the kenyan paye tax bands:
+>10% for income up to 24,000 shillings
+>25% for income between 24,001 shillings and 32,333 shillings
+>30% for income above 32,333 shillings
+
+3 NHIF deduction
+based on gross salary using NHIF contribution rates
+
+4. NSSF deduction
+6% of gross salary capped at 1,800 shillings
+
+5. Validation
+Ensures basic salary and benefits are positive numbers
+
+6. breakdown
+Provides a detailed breakdown of all calculations, iinccluding gross salary, PAYE, NHIF, NSSF, total deductions and the net salry
+
+how to use
+
+the inputs are
+>basic salary: a positive number represeinting the individual's basic salary
+>benefits: a positive number representing additional allowances or benefits
+
+the program returns an object containing
+>grossSalry : the totalm income before deductions
+>payee : PAYE tax amount
+>nhif: NHIF deduction amount
+>nssf : NSSF deduction amount
+>totalDeductions : Total deductions (PAYE + NHIF + NSSF)
+>netSalary : Final net salry after deductions
