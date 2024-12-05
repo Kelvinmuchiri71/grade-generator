@@ -54,11 +54,11 @@ const totalDeductions = payee + nhif + nssf;
 const netSalary = grossSalary - totalDeductions;
 
 return {
-    grossSalary,
-    payee: payee.toFixed(2),
-    nhif: nhif.toFixed(2),
-    nssf: nssf.toFixed(2),
-    totalDeductions: totalDeductions.toFixed(2),
-    netSalary: netSalary.toFixed(2)
+    'grossSalary': grossSalary,
+    'payee': payee.toFixed(2),
+    'nhif': nhif.toFixed(2),
+    'nssf': nssf.toFixed(2),
+    'totalDeductions': totalDeductions.toFixed(2),
+    'netSalary': netSalary.toFixed(2)
   };
 }
